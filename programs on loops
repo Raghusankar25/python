@@ -33,6 +33,22 @@ count = 0
 while (num != 0):
     num//=10
     count+=1
+    
+    
+7) What are the pass,break and loop statements
+Break statement: 
+As the name suggests, break the loop and moves the program to control the block of code after the loop (if nay).
+Pass statement:
+This statement is used to do nothibg 2 of its uses are:exception catchiing and if elif chain
+Continue statement:
+This statement is opposite of break statement and is used to force the next iteration of the loop.
+
+8) program for factorial:
+n=int(input())
+fact=1
+for i in range(1,n+1):
+    fact=fact*i
+print(fact)
 
 print("Number of digits:",count)
 output:
