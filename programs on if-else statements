@@ -1,0 +1,82 @@
+1.valid num and invaid num 
+a=int(input())
+b=str(a)
+l=len(b)
+c=-1
+for i in range(l):
+    if(b[i]!='5'):
+        c=c+1
+if((300<a<700) and (c>=0)):
+    print("Valid Number")
+else:
+    print("Not a Valid Number")
+    
+  
+  
+2. smallest among 3 numbers
+a=int(input())
+b=int(input())
+c=int(input())
+
+if a<b and a<c:
+    print(a)
+elif b<a and b<c :
+    print(b)
+elif c<a and c<b:
+    print(c)
+else :
+    print(a)
+    
+    
+3.print given num is pos or neg
+n=float(input())
+if(n<0):
+    print("Negative")
+else:
+    print("Positive")
+    
+    
+ 4. calculate double and triple
+ n=int(input())
+if(n%3==0):
+    print(n*3)
+else:
+    print(n*2)
+    
+   
+ 5. hypotenuse of right angle triangle
+ a=int(input())
+b=int(input())
+sq_a = a**2 
+sq_b = b**2
+c =  (sq_a+sq_b)  **  0.5
+
+print(int(c))
+
+
+
+6.SQUARE ROOT OF NUM-2
+A=int(input())
+B=int(input())
+sq=A**0.5
+if(sq==B):
+    print("Square root of A is equal to B")
+else:
+       print("Square root of A is not equal to B")
+       
+       
+ 7.armstrong or not
+ n=int(input())
+q=n
+sum=0
+p=str(n)
+l=len(p)
+while(n>0):
+     r=n%10
+     n=n//10
+     sum+=pow(r,l)
+if(sum==q):
+    print("Armstrong Number")
+else:
+    print("Not an Armstrong Number")
+Footer
