@@ -1,0 +1,60 @@
+1)What will be the output of the following Python statement?
+"a"+"bc"
+->abc
+
+
+2) What is the maximum possible length of an identifier in Python?
+->An identifier can have a maximum length of 79 characters in Python.
+
+3)What will be the output of the following Python code?
+x = 'abcd'
+for i in range(len(x)):
+    print(i)
+a) error
+b) 1 2 3 4
+c) a b c d
+d) 0 1 2 3
+->option d
+
+4)What will be the value of x in the following Python expression?
+x = int(43.55+2/2)
+->it doesn't give anything because the input is float but it declare with int.
+->if we change float instead of int then output will be 44.55
+
+
+5)Do we need to declare variables with data types in Python?
+->No, in Python no need to declare variables with datatypes.
+
+
+6)write a program to count no. of digits in a number?
+num=int(input("enter num"))
+count = 0
+
+while (num != 0):
+    num//=10
+    count+=1
+
+print("Number of digits:",count)
+output:
+entetr the num:23456
+num of digits
+
+
+7)Display Fibonacci series up to 10 terms using loops? in pytjon
+n = int(input("Enter the value of 'n': "))
+a = 0
+b = 1
+sum = 0
+count = 1
+print("Fibonacci Series: ", end = " ")
+while(count <= n):
+  print(sum, end = " ")
+  count += 1
+  a = b
+  b = sum
+  sum = a + b
+  
+  ouput:
+  Fibonacci Series:  0 1 1 2 3 5 8 13 21 34 
+  
+  
