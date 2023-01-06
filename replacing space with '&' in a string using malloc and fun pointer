@@ -1,0 +1,27 @@
+#include<stdio.h>
+char fun(char *ptr,int len)
+{
+    for( int i=0;i<len;i++)
+    {
+        if(ptr[i]==32 && ptr[i]!='\0')
+        {
+            ptr[i]='&';
+            
+        }
+        
+    }
+    printf("%s",ptr);
+    
+}
+int main()
+{
+    char s[]="raghu and hema are both are best friend";
+    int len=(sizeof(s)/sizeof(s[0]));
+    char *ptr=(char*)malloc(len*sizeof(char));
+    ptr=s;
+    char (*fptr)(char *,int)=fun;
+    fptr(ptr,len);
+}
+
+output:
+raghu&and&hema&are&both&are&best&friend
