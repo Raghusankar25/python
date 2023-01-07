@@ -1,0 +1,49 @@
+1.convert tuple to string:
+tup=('1','2','3','4')
+s=''
+for i in tup:
+    s=s+i
+print(s)
+output:
+1234
+
+
+2.create a tuple
+tuple_a=("Raghu",25,8.5)
+print(tuple_a)
+output:
+('Raghu', 25, 8.5)
+
+
+3.Write a Python program to create a tuple with numbers and print one item.
+tuple_a=(25,28,60,7,8)
+print(tuple_a[2])
+output:
+60
+
+
+4.Write a Python program to check whether an element exists within a tuple
+tuple25=(5,2,6,7,8)
+Tuple_a=10 in tuple25
+print(Tuple_a)
+Tuple_b=2 in tuple25
+print(Tuple_b)
+Tuple_c=2 not in tuple25
+print(Tuple_c)
+Tuple_d=10 not in tuple25
+print(Tuple_d)
+
+
+output:
+False
+True
+False
+True
+
+
+5.convert list to tuple
+list1=[1,2,3,4,5]
+tuple_a=tuple(list1)
+print(tuple_a)
+output:
+(1, 2, 3, 4, 5)
