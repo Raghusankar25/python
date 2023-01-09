@@ -1,0 +1,58 @@
+1.data format
+a=input()
+print(a.replace('-','/'))
+
+output:
+07-08-2023
+07/08/2023
+
+2.lowercase & uppercase
+str=input()
+print(str.lower())
+print(str.upper())
+
+3.palidrome
+a= input().lower()
+res=''
+for i in a:
+    res=i+res
+if a==res:
+    print("Palindrome")
+else:
+    print("Not a Palindrome")
+    
+output:
+121
+Palindrome
+
+4.swap case
+a= input()
+res=''
+
+for i in a:
+    if i==i.lower():
+        res+=i.upper()
+    else:
+        res+=i.lower()
+print(res)
+
+output:
+Coding
+cODING
+
+5.String Concatenation
+a = "Hello"
+b = "World"
+c = a + " " + b
+print(c)
+
+output:
+Hello World
+
+6.String Format
+age = 36
+txt = "My name is John, and I am {}"
+print(txt.format(age))
+
+output:
+My name is John, and I am 36
