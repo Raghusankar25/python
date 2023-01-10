@@ -1,0 +1,117 @@
+1.Removing vowels in a string
+string=input()
+vowels=['a','e','i','o','u','A','E','I','O','U']
+res=""
+for char in string:
+    if char not in vowels:
+        res = res + char
+print(res)
+
+output:
+Raghuvaran
+Rghvrn
+
+2.letter,digits,special characters
+a=input ()
+b=a.isdigit()
+d=["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]   
+
+if a in d:
+    print("Uppercase Letter")
+elif b:
+    print("Digit")
+else:
+    print("Special Character")
+    
+3.import re
+string=input()
+upper_a=""
+lower_a=""
+digits_a=""
+special_char=re.search("@",string)
+for i in string:
+    if i.isupper():
+        upper_a+=i
+    if i.islower():
+        lower_a+=i 
+    if i.isdigit():
+        digits_a+=i 
+    else:
+        print(special_char)
+print(upper_a)
+print(lower_a)
+print(digits_a)
+
+output:
+Raghu@123
+<re.Match object; span=(5, 6), match='@'>
+<re.Match object; span=(5, 6), match='@'>
+<re.Match object; span=(5, 6), match='@'>
+<re.Match object; span=(5, 6), match='@'>
+<re.Match object; span=(5, 6), match='@'>
+<re.Match object; span=(5, 6), match='@'>
+R
+aghu
+123
+
+4.String isalpha()
+name = "Raghuvaran"
+print(name.isalpha())
+
+# contains whitespace
+name = "Raghu sankar"
+print(name.isalpha())
+
+# contains number
+name = "RaghuVaran@123"
+print(name.isalpha())
+
+output:
+True
+False
+False
+
+5.String join()
+text = ['Python', 'is', 'a', 'fun', 'programming', 'language']
+print(' '.join(text))
+
+Output: 
+Python is a fun programming language
+
+6.join() with lists
+numList = ['1', '2', '3', '4']
+separator = ', '
+print(separator.join(numList))
+
+# .join() with tuples
+numTuple = ('1', '2', '3', '4')
+print(separator.join(numTuple))
+
+s1 = 'abc'
+s2 = '123'
+
+# each element of s2 is separated by s1
+# '1'+ 'abc'+ '2'+ 'abc'+ '3'
+print('s1.join(s2):', s1.join(s2))
+
+# each element of s1 is separated by s2
+# 'a'+ '123'+ 'b'+ '123'+ 'b'
+print('s2.join(s1):', s2.join(s1))
+
+output:
+1, 2, 3, 4
+1, 2, 3, 4
+s1.join(s2): 1abc2abc3
+s2.join(s1): a123b123c
+
+7.string replace
+cmp = 'we in thundersoft comapany'
+print(song.replace('we', 'I'))
+
+cmp = 'let it be ,let happen'
+print(song.replace('let', "don't let", 2))
+
+output:
+I in thundersoft comapany
+don't let it be ,don't let happen
+
