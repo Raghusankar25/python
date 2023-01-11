@@ -1,0 +1,120 @@
+1.Dictionary clear
+# dictionary
+numbers = {1: "one", 2: "two"}
+
+# removes all the items from the dictionary
+numbers.clear()
+
+print(numbers)
+
+Output: {}
+
+2.cityTemperature = {"New York": 18, "Texas": 26}
+
+print("Dictionary before clear():", cityTemperature)
+
+# removes all the items from the dictionary
+cityTemperature.clear()
+
+print("Dictionary after clear():", cityTemperature)
+
+Output:
+Dictionary before clear(): {'New York': 18, 'Texas': 26}
+Dictionary after clear(): {}
+
+3.Dictionary copy
+original_marks = {'Physics':67, 'Maths':87}
+
+copied_marks = original_marks.copy()
+
+
+print('Original Marks:', original_marks)
+print('Copied Marks:', copied_marks)
+
+Output: Original Marks: {'Physics': 67, 'Maths': 87}
+       Copied Marks: {'Physics': 67, 'Maths': 87}
+       
+4.Dictinary fromkeys
+# keys for the dictionary
+alphabets = {'a', 'b', 'c'}
+
+# value for the dictionary
+number = 1
+
+# creates a dictionary with keys and values
+dictionary = dict.fromkeys(alphabets, number)
+
+print(dictionary)
+
+Output: {'a': 1, 'c': 1, 'b': 1}
+
+5.Dictionary get
+person = {'name': 'Phill', 'age': 22}
+
+print('Name: ', person.get('name'))
+
+print('Age: ', person.get('age'))
+
+# value is not provided
+print('Salary: ', person.get('salary'))
+
+
+# value is provided
+print('Salary: ', person.get('salary', 0.0))
+
+output:
+Name:  Phill
+Age:  22
+Salary:  None
+Salary:  0.0
+
+6.Dictionary items
+# random sales dictionary
+sales = { 'apple': 2, 'orange': 3, 'grapes': 4 }
+
+items = sales.items()
+
+print('Original items:', items)
+
+# delete an item from dictionary
+del[sales['apple']]
+
+print('Updated items:', items)
+
+output:
+Original items: dict_items([('apple', 2), ('orange', 3), ('grapes', 4)])
+Updated items: dict_items([('orange', 3), ('grapes', 4)])
+
+7.Dictionary keys
+employee = {'name': 'Phill', 'age': 22}
+
+# extracts the dictionary keys
+dictionaryKeys = employee.keys()
+
+print('Before dictionary update:', dictionaryKeys)
+
+# adds an element to the dictionary
+employee.update({'salary': 3500.0})
+
+# prints the updated view object
+print('After dictionary update:', dictionaryKeys)
+
+output:
+Before dictionary update
+dict_keys(['name', 'age'])
+
+After dictionary update
+dict_keys(['name', 'age', 'salary'])
+
+8.Dictionary pop
+# random sales dictionary
+sales = { 'apple': 2, 'orange': 3, 'grapes': 4 }
+
+element = sales.pop('apple')
+
+print('The popped element is:', element)
+print('The dictionary is:', sales)
+
+Output:
+The popped element is: 2
+The dictionary is: {'orange': 3, 'grapes': 4}
