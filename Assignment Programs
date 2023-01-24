@@ -1,0 +1,88 @@
+1.area & Perimeter of Rectnagle
+l=int(input("Enter length:"))
+b=int(input("Enter Breadth:"))
+area=l*b 
+per=2*area
+print("Area of rectangle:",area)
+print("Perimeter of rectangle:",per)
+
+output:
+Enter length:10
+Enter Breadth:20
+Area of rectangle: 200
+Perimeter of rectangle: 400
+
+2.area of Triangle
+b=int(input("Enter Base:"))
+h=int(input("Enter Height:"))
+area=0.5*(b*h)
+print("Area of Traiangle:",area)
+
+output:
+Enter Base:20
+Enter Height:25
+Area of Traiangle: 250.0
+
+3.Simple Interest
+p=int(input("Enter Principal:"))
+t=int(input("Enter Time:"))
+r=float(input("Enter Rate of Interest:"))
+si=(p*t*r)/100
+print("Simple Interest:",si)
+
+ouput:
+Enter Principal:5000
+Enter Time:2
+Enter Rate of Interest:10.5
+Simple Interest: 1050.0
+
+
+4.Find Celsius for given Fahrenheit
+f=float(input("Enter fahrenheit:"))
+c=5/9*(f-32)
+s=round(c,2)
+print("Celsius:",s)
+
+output:
+Enter fahrenheit:45
+Celsius:7.22
+
+5.Arithmatic operations
+a=int(input("Enter a value:"))
+b=int(input("Enter b value:"))
+print("Addition of a and b:",a+b) 
+print("Subration of a and b:",a-b)
+print("Multiplication of a and b:",a*b)
+print("Division of a and b:",a/b)
+
+output:
+Enter a value:10
+Enter b value:20
+Addition of a and b: 30
+Subration of a and b: -10
+Multiplication of a and b: 200
+Division of a and b: 0.5
+
+6.total and Average of 6 subjects
+M=int(input("Enter Maths marks:"))
+P=int(input("Enter Physics marks:"))
+C=int(input("Enter Chemistry marks:"))
+B=int(input("Enter Biology marks:"))
+S=int(input("Enter Social marks:"))
+T=int(input("Enter Telugu marks:"))
+total=M+P+C+B+S+T
+Average=total/6
+print("Total marks of 6 subjects:",total)
+print("Average of 6 subjects:",Average)
+
+output:
+Enter Maths marks:95
+Enter Physics marks:85
+Enter Chemistry marks:80
+Enter Biology marks:72
+Enter Social marks:65
+Enter Telugu marks:60
+Total marks of 6 subjects: 457
+Average of 6 subjects: 76
+
+
