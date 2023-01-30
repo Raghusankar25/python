@@ -1,0 +1,76 @@
+1.print largest string in a list:
+
+colours=["red","green","yellow","white","brown"]
+
+max=-1
+
+for i in colours:
+
+    if(len(i)>max):
+
+        max=len(i)
+
+        res=i
+
+print(res)
+
+output:
+
+yellow
+
+2. print no of strings in list which length is greater than or equal to 5
+
+colors=["red","green","yellow","white","brown"]
+
+count=0
+
+for i in colors:
+
+    if(len(i)>=5):
+
+        count+=1
+
+print(count)
+
+output:
+
+4
+
+
+
+3.print count if last and first letters are same in a list
+
+colors=["red","green","yellow","white","brown"]
+
+count=0
+
+s="sos"
+
+lst=colors.append(s)
+
+for i in colors:
+
+    if(i[0]==i[-1]):
+
+        count+=1
+
+print(count)
+
+output:
+
+1
+
+4. sort the list:
+
+lis=[1.0, 1.5,9.0, 10.7, 2 ]
+for i in range(len(lis)):
+    for j in range(i+1,len(lis)):
+
+        if(lis[i]>lis[j]):
+
+            lis[i],lis[j]= lis[j],lis[i]
+print(lis)
+
+output:
+
+[1.0, 1.5, 2, 9.0, 10.7
