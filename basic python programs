@@ -1,0 +1,78 @@
+s1={"apples","bananas","grapes"}
+s2={"pear","apples","bananas","pineapple"}
+print(s1.intersection(s2))
+
+
+
+s1={"apples","bananas","grapes"}
+s2=["pear","apples","bananas","pineapple","apples","bananas"]
+print(list(set(s2)))
+
+
+
+
+s1={"apples","bananas","grapes"}
+s2=["pear","apples","bananas","pineapple","apples","bananas"]
+
+ l=list(set(s1) & set(s2))
+ print(l)
+
+# s1.update(s2)
+# print(s1)
+
+# s1.add("cherries")
+# print(s1)
+
+# s3="i went to market and i went to exhibition"
+# new=set(s3)
+
+# s1.discard("grapes")
+#s1.discard("pear")it doesn't shows error even though element is not present
+# print(s1)
+
+#  s1.remove("pear") 
+#  it shows key error if element is not present
+# print(s1)
+
+# s1.clear()
+# print(s1)
+
+# print("pear" in s3)
+# print("pineapple" in s3)
+
+# for fruits in s1:
+#     print(fruits)
+
+# fruits=s1.union(s3)
+# print(fruits)
+
+# fruits=s1.intersection(s3)
+# print(fruits)
+
+
+
+# lis=["aaa","red","round","ccc","road","orange"]
+# new_lis=[]
+# for i in lis:
+#     if(len(i)>=3 and i.startswith('r')):
+#         new_lis.append(i)
+# print(new_lis)
+
+
+
+# lis=[1,2,2,3,4,4,5,6,6,1]
+# new_lis=[]
+# for i in lis:
+#     if i not in new_lis and i not in new_lis[-1]:
+#         new_lis.append(i)
+# print(new_lis)
+
+lis=["name","age","gender","address"]
+dic={"name":"cat","age":2,"gender":'f'}
+for i in lis:
+    if i  in dic.keys():
+        pass
+print(dic.items())
+    
+
+print(i +" is not present in dic")
