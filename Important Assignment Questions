@@ -33,10 +33,7 @@ for i in colors:
 print(count)
 
 output:
-
 4
-
-
 
 3.print count if last and first letters are same in a list
 
@@ -74,3 +71,76 @@ print(lis)
 output:
 
 [1.0, 1.5, 2, 9.0, 10.7
+
+5..Sort the list of strings ['bread', 'biscuit', 'cupcake', 'pastry', 'pancake'] -- the strings that start with 'p'should come first and strings that strt with 'b' should go last
+
+lis= ['bread', 'biscuit', 'cupcake', 'pastry', 'pancake']
+lis.sort()
+print(lis)
+new_lis=[]
+for i in lis:
+    if(i[0]=='p'):
+        new_lis.append(i)
+for i in lis:
+    if(i[0]!='b' and i not in new_lis):
+            new_lis.append(i)
+for i in lis:
+    if i not in new_lis:
+        new_lis.append(i)
+print(new_lis)
+
+output:
+['biscuit', 'bread', 'cupcake', 'pancake', 'pastry']
+['pancake', 'pastry', 'cupcake', 'biscuit', 'bread']
+
+
+
+6. List1 = [äpples ,"bananas", ""pineapples""]
+Shopping list = [ apples, apples, bananas, apples, pear, pineapples, pear, apples,banana]
+count the no.of times list1 elements are present in ShoppingList
+
+
+List1 = ["apples" ,"bananas", "pineapples"]
+count=0
+Shopping_list = [ "apples", "apples", "bananas", "apples", "pear", "pineapples", "pear", "apples","bananas"]
+for i in List1:
+    for j in Shopping_list:
+        if i==j:
+            count+=1
+    print(i + ":" + str(count)+" times "+"in "+ "shoppinglist" )
+    count=0
+
+output:
+apples:4 times in shoppinglist
+bananas:2 times in shoppinglist
+pineapples:1 times in shoppinglist
+
+
+gaming question:
+
+import random
+rand_num=random.randint(1,20)
+for i in range(5):
+    num=int(input("enter the guessing num:"))
+    if num>rand_num:
+        print("your guess is too high")
+    elif num<rand_num:
+        print("your guess is too low")
+
+    else:
+        break
+if num==rand_num:
+    print("your guess is right")
+else:
+    print("your game is over")
+    
+    
+ output:
+ enter the guessing num:8
+your guess is too low
+enter the guessing num:10
+your guess is too low
+enter the guessing num:19
+your guess is too low
+enter the guessing num:20
+your guess is right
