@@ -1,0 +1,31 @@
+def present_or_not(dic):
+    lis=[]
+    itemss=dic.items()
+    print(itemss)
+    while(True):
+        s=input("enter the value to search")
+        for i in itemss:
+            if(i[1]==s):
+                lis.append(i[0])
+            else:
+                 print("your entered value is not present in the dic:")
+
+        print("do u want to continue")
+        s1 = input("enter Yes or No:")
+        if s1 == "Yes":
+            continue
+        else:
+            break
+    return(lis)
+
+
+dic={"raghu":"Aug25","sniggu":"dec5","sandy":"dec5"}
+print(present_or_not(dic))
+
+output:
+dict_items([('raghu', 'Aug25'), ('sniggu', 'dec5'), ('sandy', 'dec5')])
+enter the value to search dec5
+your entered value is not present in the dic:
+do u want to continue
+enter Yes or No:no
+['sniggu', 'sandy']
